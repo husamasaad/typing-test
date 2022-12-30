@@ -23,7 +23,7 @@ quoteInputElement.addEventListener("input", () => {
   const arrayValue = quoteInputElement.value.split('');
   let correct = true;
   arrayQuote.forEach((charSpan, index) => {
-    const char = arrayValue[index];
+    const char = arrayValue[index].toLowerCase();
     if (char == null) {
       charSpan.classList.remove('correct');
       charSpan.classList.remove('incorrect');
@@ -39,7 +39,7 @@ quoteInputElement.addEventListener("input", () => {
     }
   })
 
-  if (correct) {
+  if (correct || arrayValue.length === arrayQuote.length) {
     renderNewQuote();
     updateResult();
   }
