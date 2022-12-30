@@ -10,4 +10,4 @@ a typing speed game using vannila javascript
 
 ### Links
 
-- [Live Site URL](https://husamasaad.github.io/things-to-do/)
+- [Live Site URL](https://husamasaad.github.io/typing-test/)
